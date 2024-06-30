@@ -1,0 +1,2 @@
+static/data/clean_data.csv filter=lfs diff=lfs merge=lfs -text
+static/data/loan_data_2007_2014.csv filter=lfs diff=lfs merge=lfs -text

@@ -5,22 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Risk Prediction Result</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="/static/style/style.css">
     <style>
         .container {
-            margin-top: 50px;
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+        }
+        h1 {
+            font-weight: bold;
         }
         .btn-primary {
             margin-top: 20px;
+        }
+        .good-loan {
+            color: #28B463;
+        }
+        .bad-loan {
+            color: #ff0018;
+        }
+        #username{
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Prediction Result</h1>
-        <p>Your credit risk prediction is: <strong>{{ prediction }}</strong></p>
+        <p>Dear <span id="username"></span>, based on our analysis, you are categorized as having a <strong id="prediction"></strong></p>
         <a href="/" class="btn btn-primary">Go back to the form</a>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const prediction = urlParams.get('prediction');
+            const username = urlParams.get('username');
+
+            const predictionElement = document.getElementById('prediction');
+            const usernameElement = document.getElementById('username');
+
+            predictionElement.textContent = prediction;
+            usernameElement.textContent = decodeURIComponent(username);
+
+            if (prediction === 'Good Loan') {
+                predictionElement.classList.add('good-loan');
+            } else if (prediction === 'Bad Loan') {
+                predictionElement.classList.add('bad-loan');
+            }
+        });
+    </script>
 </body>
 </html>

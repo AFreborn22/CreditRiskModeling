@@ -111,7 +111,7 @@ def predict():
     prediction = int(prediction[0])
     
     # Konversi hasil prediksi ke nasabah baik atau buruk
-    result = "Good Loan" if prediction == 0 else "Bad Loan"
+    result = "Good Loaner" if prediction == 0 else "Bad Loaner"
 
     # Kembalikan hasil prediksi dalam format JSON
     return jsonify({'prediction': result})

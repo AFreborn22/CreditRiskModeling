@@ -22,11 +22,11 @@
         .btn-primary {
             margin-top: 20px;
         }
-        .good-loan {
-            color: #28B463;
+        .good-loan{
+            color: #28B463 !important;
         }
-        .bad-loan {
-            color: #ff0018;
+        .bad-loan{
+            color: #ff0018 !important;
         }
         #username{
             font-weight: bold;
@@ -52,9 +52,9 @@
             predictionElement.textContent = prediction;
             usernameElement.textContent = decodeURIComponent(username);
 
-            if (prediction === 'Good Loan') {
+            if (prediction === 'Good Loaner') {
                 predictionElement.classList.add('good-loan');
-            } else if (prediction === 'Bad Loan') {
+            } else if (prediction === 'Bad Loaner') {
                 predictionElement.classList.add('bad-loan');
             }
         });

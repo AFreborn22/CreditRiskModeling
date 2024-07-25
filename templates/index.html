@@ -15,21 +15,25 @@
             <!-- Form groups for input fields -->
             <div class="form-group">
                 <label for="username">Name</label>
+                <small class="form-text text-muted">(Isikan nama anda)</small>
                 <input type="text" class="form-control" id="username" name="username" required>
                 <div class="invalid-feedback">Please enter your name.</div>
             </div>
             <div class="form-group">
                 <label for="loan_amnt">Loan Amount</label>
+                <small class="form-text text-muted">(Masukkan jumlah pinjaman)</small>
                 <input type="number" class="form-control" id="loan_amnt" name="loan_amnt" required>
                 <div class="invalid-feedback">Please enter the loan amount.</div>
             </div>
             <div class="form-group">
                 <label for="int_rate">Interest Rate</label>
+                <small class="form-text text-muted">(Masukkan suku bunga)</small>
                 <input type="number" step="0.01" class="form-control" id="int_rate" name="int_rate" required>
                 <div class="invalid-feedback">Please enter the interest rate.</div>
             </div>
             <div class="form-group">
                 <label for="home_ownership">Home Ownership</label>
+                <small class="form-text text-muted">(Pilih status kepemilikan rumah)</small>
                 <select class="form-control" id="home_ownership" name="home_ownership" required>
                     <option value="" disabled selected>Select</option>
                     <option value="RENT">Rent</option>
@@ -43,11 +47,13 @@
             </div>
             <div class="form-group">
                 <label for="annual_inc">Annual Income</label>
+                <small class="form-text text-muted">(Masukkan pendapatan tahunan anda)</small>
                 <input type="number" class="form-control" id="annual_inc" name="annual_inc" required>
                 <div class="invalid-feedback">Please enter your annual income.</div>
             </div>
             <div class="form-group">
                 <label for="verification_status">Verification Status</label>
+                <small class="form-text text-muted">(Pilih status verifikasi)</small>
                 <select class="form-control" id="verification_status" name="verification_status" required>
                     <option value="" disabled selected>Select</option>
                     <option value="Verified">Verified</option>
@@ -58,6 +64,7 @@
             </div>
             <div class="form-group">
                 <label for="purpose">Purpose</label>
+                <small class="form-text text-muted">(Pilih tujuan pinjaman)</small>
                 <select class="form-control" id="purpose" name="purpose" required>
                     <option value="" disabled selected>Select</option>
                     <option value="credit_card">Credit Card</option>
@@ -79,6 +86,7 @@
             </div>
             <div class="form-group">
                 <label for="addr_state">State</label>
+                <small class="form-text text-muted">(Pilih negara bagian anda)</small>
                 <select class="form-control" id="addr_state" name="addr_state" required>
                     <option value="" disabled selected>Select</option>
                     <option value="AZ">AZ</option>
@@ -136,110 +144,131 @@
             </div>
             <div class="form-group">
                 <label for="dti">Debt-to-Income Ratio</label>
+                <small class="form-text text-muted">(Masukkan rasio utang terhadap pendapatan)</small>
                 <input type="number" step="0.01" class="form-control" id="dti" name="dti" required>
                 <div class="invalid-feedback">Please enter the debt-to-income ratio.</div>
             </div>
             <div class="form-group">
                 <label for="delinq_2yrs">Delinquencies in Last 2 Years</label>
+                <small class="form-text text-muted">(Masukkan jumlah tunggakan dalam 2 tahun terakhir)</small>
                 <input type="number" class="form-control" id="delinq_2yrs" name="delinq_2yrs" required>
                 <div class="invalid-feedback">Please enter the number of delinquencies in last 2 years.</div>
             </div>
             <div class="form-group">
                 <label for="inq_last_6mths">Inquiries in Last 6 Months</label>
+                <small class="form-text text-muted">(Masukkan jumlah permintaan kredit dalam 6 bulan terakhir)</small>
                 <input type="number" class="form-control" id="inq_last_6mths" name="inq_last_6mths" required>
                 <div class="invalid-feedback">Please enter the number of inquiries in last 6 months.</div>
             </div>
             <div class="form-group">
                 <label for="mths_since_last_delinq">Months Since Last Delinquency</label>
+                <small class="form-text text-muted">(Masukkan jumlah bulan sejak tunggakan terakhir)</small>
                 <input type="number" class="form-control" id="mths_since_last_delinq" name="mths_since_last_delinq" required>
                 <div class="invalid-feedback">Please enter the months since last delinquency.</div>
             </div>
             <div class="form-group">
                 <label for="open_acc">Open Accounts</label>
+                <small class="form-text text-muted">(Masukkan jumlah akun terbuka)</small>
                 <input type="number" class="form-control" id="open_acc" name="open_acc" required>
                 <div class="invalid-feedback">Please enter the number of open accounts.</div>
             </div>
             <div class="form-group">
                 <label for="pub_rec">Public Records</label>
+                <small class="form-text text-muted">(Masukkan jumlah catatan publik)</small>
                 <input type="number" class="form-control" id="pub_rec" name="pub_rec" required>
                 <div class="invalid-feedback">Please enter the number of public records.</div>
             </div>
             <div class="form-group">
                 <label for="revol_bal">Revolving Balance</label>
+                <small class="form-text text-muted">(Masukkan saldo bergulir)</small>
                 <input type="number" class="form-control" id="revol_bal" name="revol_bal" required>
                 <div class="invalid-feedback">Please enter the revolving balance.</div>
             </div>
             <div class="form-group">
                 <label for="revol_util">Revolving Utilization</label>
+                <small class="form-text text-muted">(Masukkan pemanfaatan saldo bergulir)</small>
                 <input type="number" step="0.01" class="form-control" id="revol_util" name="revol_util" required>
                 <div class="invalid-feedback">Please enter the revolving utilization.</div>
             </div>
             <div class="form-group">
                 <label for="total_acc">Total Accounts</label>
+                <small class="form-text text-muted">(Masukkan total akun)</small>
                 <input type="number" class="form-control" id="total_acc" name="total_acc" required>
                 <div class="invalid-feedback">Please enter the total number of accounts.</div>
             </div>
             <div class="form-group">
                 <label for="initial_list_status">Initial List Status</label>
+                <small class="form-text text-muted">(Pilih status daftar awal)</small>
                 <select class="form-control" id="initial_list_status" name="initial_list_status" required>
                     <option value="" disabled selected>Select</option>
-                    <option value="f">f</option>
-                    <option value="w">w</option>
+                    <option value="f">Fully Funded</option>
+                    <option value="w">Waiting for Funding</option>
                 </select>
                 <div class="invalid-feedback">Please select the initial list status.</div>
             </div>
             <div class="form-group">
                 <label for="out_prncp">Outstanding Principal</label>
+                <small class="form-text text-muted">(Masukkan pokok yang terhutang)</small>
                 <input type="number" step="0.01" class="form-control" id="out_prncp" name="out_prncp" required>
                 <div class="invalid-feedback">Please enter the outstanding principal.</div>
             </div>
             <div class="form-group">
                 <label for="total_rec_late_fee">Total Late Fee</label>
+                <small class="form-text text-muted">(Masukkan total biaya keterlambatan)</small>
                 <input type="number" step="0.01" class="form-control" id="total_rec_late_fee" name="total_rec_late_fee" required>
                 <div class="invalid-feedback">Please enter the total late fee.</div>
             </div>
             <div class="form-group">
                 <label for="recoveries">Recoveries</label>
+                <small class="form-text text-muted">(Masukkan jumlah pemulihan)</small>
                 <input type="number" step="0.01" class="form-control" id="recoveries" name="recoveries" required>
                 <div class="invalid-feedback">Please enter the recoveries amount.</div>
             </div>
             <div class="form-group">
                 <label for="collections_12_mths_ex_med">Collections in Last 12 Months Excluding Medical</label>
+                <small class="form-text text-muted">(Masukkan jumlah koleksi dalam 12 bulan terakhir tidak termasuk medis)</small>
                 <input type="number" class="form-control" id="collections_12_mths_ex_med" name="collections_12_mths_ex_med" required>
                 <div class="invalid-feedback">Please enter the number of collections in last 12 months excluding medical.</div>
             </div>
             <div class="form-group">
                 <label for="acc_now_delinq">Accounts Now Delinquent</label>
+                <small class="form-text text-muted">(Masukkan jumlah akun yang saat ini tunggakan)</small>
                 <input type="number" class="form-control" id="acc_now_delinq" name="acc_now_delinq" required>
                 <div class="invalid-feedback">Please enter the number of accounts now delinquent.</div>
             </div>
             <div class="form-group">
                 <label for="tot_coll_amt">Total Collection Amount</label>
+                <small class="form-text text-muted">(Masukkan jumlah total koleksi)</small>
                 <input type="number" step="0.01" class="form-control" id="tot_coll_amt" name="tot_coll_amt" required>
                 <div class="invalid-feedback">Please enter the total collection amount.</div>
             </div>
             <div class="form-group">
                 <label for="tot_cur_bal">Total Current Balance</label>
+                <small class="form-text text-muted">(Masukkan saldo total saat ini)</small>
                 <input type="number" step="0.01" class="form-control" id="tot_cur_bal" name="tot_cur_bal" required>
                 <div class="invalid-feedback">Please enter the total current balance.</div>
             </div>
             <div class="form-group">
                 <label for="emp_length_int">Employment Length (in years)</label>
+                <small class="form-text text-muted">(Masukkan lama kerja (dalam tahun))</small>
                 <input type="number" class="form-control" id="emp_length_int" name="emp_length_int" required>
                 <div class="invalid-feedback">Please enter the employment length in years.</div>
             </div>
             <div class="form-group">
                 <label for="term_int">Loan Term (in months)</label>
+                <small class="form-text text-muted">(Masukkan jangka waktu pinjaman (dalam bulan))</small>
                 <input type="number" class="form-control" id="term_int" name="term_int" required>
                 <div class="invalid-feedback">Please enter the loan term in months.</div>
             </div>
             <div class="form-group">
                 <label for="mths_since_earliest_cr_line">Months Since Earliest Credit Line</label>
+                <small class="form-text text-muted">(Masukkan jumlah bulan sejak jalur kredit pertama)</small>
                 <input type="number" class="form-control" id="mths_since_earliest_cr_line" name="mths_since_earliest_cr_line" required>
                 <div class="invalid-feedback">Please enter the months since earliest credit line.</div>
             </div>
             <div class="form-group">
                 <label for="mths_since_issue_d">Months Since Issue Date</label>
+                <small class="form-text text-muted">(Masukkan jumlah bulan sejak tanggal penerbitan)</small>
                 <input type="number" class="form-control" id="mths_since_issue_d" name="mths_since_issue_d" required>
                 <div class="invalid-feedback">Please enter the months since issue date.</div>
             </div>

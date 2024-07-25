@@ -12,6 +12,13 @@ h1 {
     color: #343a40;
 }
 
+.good-loan{
+    color: #28B463 !important;
+}
+.bad-loan{
+    color: #ff0018 !important;
+}
+
 .form-group {
     margin-bottom: 15px;
 }
